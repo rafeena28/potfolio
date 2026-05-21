@@ -1,0 +1,185 @@
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0a0f1c;
+  color: white;
+}
+
+/* FULL WIDTH CONTROL */
+.app {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* CONTAINER (gives nice spacing, not cramped) */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(12px);
+  background: rgba(10, 15, 28, 0.6);
+  z-index: 10;
+}
+
+/* HERO FULL SCREEN FIX */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 0 20px;
+}
+
+/* BIG SOFT BACKGROUND GLOW */
+.hero-bg {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: #3b82f6;
+  filter: blur(180px);
+  opacity: 0.35;
+}
+
+/* HERO TEXT SPACING */
+.hero-content h1 {
+  font-size: 70px;
+  margin: 15px 0;
+}
+
+.desc {
+  max-width: 600px;
+  margin: auto;
+  color: #94a3b8;
+}
+
+/* BUTTONS */
+.buttons {
+  margin-top: 25px;
+}
+
+.primary {
+  background: #38bdf8;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid #38bdf8;
+  padding: 12px 22px;
+  border-radius: 10px;
+  color: white;
+}
+
+/* SECTIONS — THIS FIXES SPACE ISSUE */
+.section {
+  padding: 140px 20px;   /* 🔥 BIG SPACE FIX */
+}
+
+/* GLASS CARD */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  padding: 50px;
+  border-radius: 20px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* CARD */
+.card {
+  background: #111827;
+  padding: 30px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.skills span {
+  background: #38bdf8;
+  color: black;
+  padding: 10px 16px;
+  border-radius: 20px;
+}
+
+/* PROJECTS */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: #111827;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 50px;
+  background: #050814;
+  margin-top: 80px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-buttons {
+  margin-top: 15px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 14px;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: yellow;
+  color: black;
+}

@@ -1,0 +1,110 @@
+import React from "react";
+import "./App.css";
+<header className="header">
+  <h1>Your Name</h1>
+  <p>React Web Developer</p>
+
+  <div className="hero-buttons">
+    <a href="#projects" className="btn">View Projects</a>
+    <a href="#contact" className="btn">Contact Me</a>
+  </div>
+</header>
+function Home() {
+  return (
+    <div className="app">
+
+      {/* NAV */}
+      <nav className="nav">
+        <h2>Rafeena.s</h2>
+        <div className="nav-links">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+        </div>
+      </nav>
+
+      {/* HERO */}
+      <section className="hero">
+        <div className="hero-bg"></div>
+
+        <div className="hero-content">
+          <p className="tag">👋 Hello, I'm</p>
+
+          <h1>
+            Rafeena.S
+          </h1>
+
+          <p className="desc">
+            Diploma in Computer Engineering student passionate about building
+            modern web applications and UI experiences.
+          </p>
+
+          <div className="buttons">
+            <button className="primary">View Projects</button>
+            <button className="secondary">Contact Me</button>
+          </div>
+        </div>
+      </section>
+
+      {/* ABOUT */}
+      <section id="about" className="section glass">
+        <h2>About Me</h2>
+        <p>
+          I am Rafeena from Balaramapuram. Currently studying Diploma in
+          Computer Engineering at GWPTC Kaimanam. My goal is to become a
+          Software Engineer and build impactful digital products.
+        </p>
+      </section>
+
+      {/* EDUCATION */}
+      <section id="education" className="section">
+        <h2>Education</h2>
+
+        <div className="grid">
+          <div className="card">SSLC</div>
+          <div className="card">Plus Two</div>
+          <div className="card">Diploma (Ongoing)</div>
+        </div>
+      </section>
+
+      {/* SKILLS */}
+      <section id="skills" className="section">
+        <h2>Skills</h2>
+
+        <div className="skills">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>React</span>
+          <span>UI Design</span>
+          <span>Communication</span>
+        </div>
+      </section>
+
+      {/* PROJECTS */}
+      <section id="projects" className="section">
+        <h2>Projects</h2>
+
+        <div className="project-grid">
+          <div className="project-card">
+            <h3>Jump the Obstacles</h3>
+            <p>Simple game built for interaction and learning.</p>
+          </div>
+
+          <div className="project-card">
+            <h3>Donor Connect</h3>
+            <p>Blood donation connecting platform for donors & patients.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="footer">
+        <p>© 2026 Rafeena • Built with React</p>
+      </footer>
+
+    </div>
+  );
+}
+
+export default Home;
